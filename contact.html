@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anton+SC&display=swap"
+      rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cookie&display=swap"
+      rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet" />
+  </head>
+  <body>
+    <div class="main p-4 sm:p-8 bg-[#F4ECE6]">
+      <div
+        id="menu"
+        class="menu-hidden w-full h-screen fixed top-0 left-0 right-0 bg-[#341713] z-[999] p-4 sm:p-12 overflow-y-auto hide-scrollbar flex flex-col gap-6 sm:gap-10 justify-between">
+        <div class="flex justify-between items-center">
+          <a href="./home.html">
+            <img
+              src="./assets/images/menuLogo.png"
+              alt=""
+              class="w-24 sm:w-48" />
+          </a>
+          <div class="flex gap-4 items-center">
+            <div id="btnClose" class="cursor-pointer flex gap-2 items-center">
+              <p class="anto text-base sm:text-lg text-white">MENU</p>
+              <img src="./assets/svgs/menuHamburger.svg" alt="" class="w-5" />
+            </div>
+            <a href="./contact.html">
+              <button
+                class="contactBtn cursor-pointer max-sm:hidden anto relative inline-flex items-center justify-center text-sm text-[#341713]">
+                <img
+                  src="./assets/svgs/Btn.svg"
+                  alt=""
+                  class="relative w-4/5" />
+
+                <div
+                  class="absolute inset-0 px-8 flex items-center justify-center break-all">
+                  CALL US&nbsp;&nbsp;(+64) 2904305039
+                </div>
+              </button>
+            </a>
+          </div>
+        </div>
+        <div class="flex justify-start items-center flex-col gap-2">
+          <a
+            href="./about.html"
+            class="relative py-3 sm:py-9 px-4 rounded-full anto text-[1.7rem] sm:text-6xl hover:bg-white/5 text-white">
+            <div
+              class="absolute -right-20 sm:-right-36 top-1/2 -translate-y-1/2">
+              <img
+                src="./assets/images/menuItem1.png"
+                alt=""
+                class="w-16 sm:w-24 sm:w-32 rotater1" />
+            </div>
+            ABOUT US
+          </a>
+          <a
+            href="./guatemalanPastries.html"
+            class="py-3 sm:py-5 px-2 text-white rounded-full anto text-[1.7rem] sm:text-6xl relative hover:bg-white/5 px-4 transition ease-in duration-150">
+            <div
+              class="absolute -left-6 sm:-left-40 -top-10 sm:top-1/2 -translate-y-1/2">
+              <img
+                src="./assets/images/menuItem2.png"
+                alt=""
+                class="w-20 sm:w-40 rotater2" />
+            </div>
+            Guatemalan Pastries
+          </a>
+          <a
+            href="./guatemalanBread.html"
+            class="py-3 sm:py-5 px-2 text-white rounded-full anto text-[1.7rem] sm:text-6xl relative hover:bg-white/5 px-4 transition ease-in duration-150">
+            <div
+              class="absolute -right-8 sm:-right-44 top-12 sm:top-[20%] sm:-translate-y-1/2">
+              <img
+                src="./assets/images/menuItem3.png"
+                alt=""
+                class="w-24 sm:w-40 rotater2" />
+            </div>
+            Guatemalan Bread
+          </a>
+          <a
+            href="./gallery.html"
+            class="py-3 sm:py-5 px-2 text-white rounded-full anto text-[1.7rem] sm:text-6xl relative hover:bg-white/5 px-4 transition ease-in duration-150">
+            <div class="absolute -left-24 sm:-left-44 top-1/2 -translate-y-1/2">
+              <img
+                src="./assets/images/menuItem4.png"
+                alt=""
+                class="w-24 sm:w-40 rotater1" />
+            </div>
+            Gallery
+          </a>
+          <button
+            class="contactBtn cursor-pointer sm:hidden anto relative inline-flex items-center justify-center text-sm text-[#341713]">
+            <img src="./assets/svgs/Btn.svg" alt="" class="relative w-4/5" />
+
+            <div
+              class="absolute inset-0 px-8 flex items-center justify-center break-all">
+              CONTACT US
+            </div>
+          </button>
+        </div>
+        <div
+          class="flex justify-between items-center mt-2 sm:mt-5 max-sm:flex-col max-sm:gap-4">
+          <div
+            class="w-full sm:w-[40%] flex gap-2 items-center justify-center sm:justify-start order-3 sm:order-1">
+            <img src="./assets/svgs/locationIcon.svg" alt="" class="w-5" />
+            <p class="Int text-[0.6rem] sm:text-sm font-light text-[#F4ECE6]">
+              Visit Us 5400 Rreston Highway,Louisville, AB 12345
+            </p>
+          </div>
+          <div
+            class="w-full sm:w-[20%] justify-center flex gap-4 items-center order-1 sm:order-2">
+            <div
+              class="w-12 sm:w-10 h-12 sm:h-10 shrink-0 p-2 sm:p-3 flex justify-center items-center rounded-full border border-white/10">
+                <img src="./assets/svgs/fbLogo.svg" alt="" />
+            </div>
+            <div
+              class="w-12 sm:w-10 h-12 sm:h-10 shrink-0 p-2 sm:p-3 flex justify-center items-center rounded-full border border-white/10">
+              <a href="instagram.com/devo.ids/">
+              <img src="./assets/svgs/instaLogo.svg" alt="" />
+              </a>
+            </div>
+            <div
+              class="w-12 sm:w-10 h-12 sm:h-10 shrink-0 p-2 sm:p-3 flex justify-center items-center rounded-full border border-white/10">
+                <img src="./assets/svgs/youtubeLogo.svg" alt="" />
+            </div>
+          </div>
+          <div
+            class="w-full sm:w-[40%] flex justify-center sm:justify-end order-2 sm:order-3">
+            <a href="https://www.instagram.com/lacasadelpanbakery/">
+              <img
+                src="./assets/svgs/rigtyLogo.svg"
+                alt=""
+                class="w-60 sm:w-[80%]" />
+            </a>
+          </div>
+        </div>
+      </div>
+      <header
+        class="w-full max-sm:px-4 sm:pr-16 flex justify-between items-center max-sm:py-6">
+        <div class="w-fit relative gsap-header-logo">
+          <img
+            src="./assets/images/Subtract.png"
+            alt=""
+            class="absolute top-0 left-0 scale-[1.32] origin-top-left max-sm:hidden" />
+          <img
+            src="./assets/images/logo.png"
+            alt=""
+            class="w-28 sm:w-52 relative sm:scale-[0.8]" />
+        </div>
+        <div class="flex gap-6">
+          <div
+            id="btnOpen"
+            class="gsap-header-menu menuBtn cursor-pointer flex gap-2 items-center">
+            <p class="anto text-base sm:text-lg text-[#341713]">MENU</p>
+            <img src="./assets/svgs/hamburger.svg" alt="" class="w-5" />
+          </div>
+          <a href="./contact.html">
+            <button
+              class="gsap-header-menu contactBtn cursor-pointer max-sm:hidden anto relative inline-flex items-center justify-center text-sm text-[#341713]">
+              <img src="./assets/svgs/Btn.svg" alt="" class="relative w-4/5" />
+
+              <div
+                class="absolute inset-0 px-8 flex items-center justify-center break-all">
+                CALL US&nbsp;&nbsp;(+64) 2904305039
+              </div>
+            </button>
+          </a>
+        </div>
+      </header>
+
+      <!-- section1 -->
+      <div
+        class="section-1 w-full sm:min-h-screen rounded-[30px] sm:rounded-[50px] bg-white sm:rounded-tl-none relative z-20 pt-6 sm:pt-12 pb-4">
+        <div
+          class="w-full py-2 px-4 sm:px-32 flex justify-between items-center max-sm:flex-col">
+          <div
+            class="w-full sm:w-[50%] flex flex-col justify-start items-center sm:items-start gap-5">
+            <h3
+              class="gsap-contact-s1-heading homeSection1SubHeading cook max-sm:text-center text-7xl sm:text-[10rem] text-[#341713] font-medium"
+              style="line-height: 0.55">
+              Get
+              <span class="inline-block">
+                <img
+                  src="./assets/images/contactImageCookie.png"
+                  alt=""
+                  class="w-16 sm:w-28 rotater2" />
+              </span>
+              <br />
+              in touch
+            </h3>
+
+            <div
+              class="w-full flex flex-col justify-start items-start gap-6 mt-5 max-sm:items-center max-sm:text-center">
+              <div
+                class="flex gap-4 gsap-contact-s1-item max-sm:flex-col max-sm:items-center">
+                <div
+                  class="w-10 h-10 rounded-full bg-[#A0D8E0] flex justify-center items-center p-2">
+                  <img src="./assets/svgs/contactPhone.svg" alt="" />
+                </div>
+                <div>
+                  <h2 class="anto text-base sm:text-3xl">Call Us Now!</h2>
+                  <h2 class="anto text-xl sm:text-4xl font-medium">
+                    (+64) 2904305039
+                  </h2>
+                </div>
+              </div>
+              <div
+                class="flex gap-4 gsap-contact-s1-item max-sm:flex-col max-sm:items-center">
+                <div
+                  class="w-10 h-10 rounded-full bg-[#FFE65A] flex justify-center items-center p-2">
+                  <img src="./assets/svgs/contactemail.svg" alt="" />
+                </div>
+                <div>
+                  <h2 class="anto text-sm sm:text-lg">Email</h2>
+                  <h2
+                    class="anto text-xl sm:text-2xl font-medium Int font-black"
+                    style="line-height: 0.8">
+                    devoidservices@gmail.com
+                  </h2>
+                </div>
+              </div>
+
+              <div
+                class="flex gap-4 gsap-contact-s1-item max-sm:flex-col max-sm:items-center">
+                <div
+                  class="w-10 h-10 rounded-full bg-[#FFA26D] flex justify-center items-center p-2">
+                  <img src="./assets/svgs/contactlocation.svg" alt="" />
+                </div>
+                <div>
+                  <h2 class="anto text-sm sm:text-lg">Proudly serving</h2>
+                  <h2
+                    class="anto text-xl sm:text-2xl font-medium"
+                    style="line-height: 0.8">
+                    5400 Preston Highway, Louisville, KY 40213
+                  </h2>
+                </div>
+              </div>
+
+              <div class="flex gap-4 max-sm:flex-col max-sm:items-center">
+                <div
+                  class="w-10 h-10 rounded-full bg-[#16A7E3] flex justify-center items-center p-2">
+                  <img src="./assets/svgs/contactcalendar.svg" alt="" />
+                </div>
+                <div>
+                  <h2 class="anto text-sm sm:text-lg">Proudly serving</h2>
+                  <h2
+                    class="anto text-xl sm:text-2xl font-medium"
+                    style="line-height: 0.8">
+                    5400 Preston Highway, Louisville, KY 40213
+                  </h2>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="w-full sm:w-[50%] relative flex justify-end py-8 sm:py-4 relative">
+            <form
+              action=""
+              class="w-full flex flex-col justify-start items-center gap-4 px-2 sm:px-10">
+              <div class="flex flex-col w-full gsap-contact-form-item">
+                <input
+                  type="text"
+                  placeholder="Name"
+                  class="py-4 px-2 bg-none text-sm sm:text-lg placeholder:text-[#341713] placeholder:font-medium text-medium text-[#341713] Int" />
+                <span class="w-full rounded-full py-[2px] bg-[#341713]"></span>
+              </div>
+              <div class="flex flex-col w-full gsap-contact-form-item">
+                <input
+                  type="text"
+                  placeholder="Phone"
+                  class="py-4 px-2 bg-none text-sm sm:text-lg placeholder:text-[#341713] placeholder:font-medium text-medium text-[#341713] Int" />
+                <span class="w-full rounded-full py-[2px] bg-[#341713]"></span>
+              </div>
+              <div class="flex flex-col w-full gsap-contact-form-item">
+                <input
+                  type="email"
+                  placeholder="Email"
+                  class="py-4 px-2 bg-none text-sm sm:text-lg placeholder:text-[#341713] placeholder:font-medium text-medium text-[#341713] Int" />
+                <span class="w-full rounded-full py-[2px] bg-[#341713]"></span>
+              </div>
+              <div class="flex flex-col w-full gsap-contact-form-item">
+                <textarea
+                  rows="4"
+                  placeholder="Message"
+                  class="py-4 px-2 bg-none text-sm sm:text-lg placeholder:text-[#341713] placeholder:font-medium text-medium text-[#341713] Int"></textarea>
+                <span class="w-full rounded-full py-[2px] bg-[#341713]"></span>
+              </div>
+              <div class="w-full flex justify-end">
+                <button
+                  type="submit"
+                  class="gsap-contact-form-btn contactBtn cursor-pointer anto relative inline-flex items-center justify-center text-sm text-[#341713]">
+                  <img
+                    src="./assets/svgs/Btn.svg"
+                    alt=""
+                    class="relative w-4/5" />
+
+                  <div
+                    class="absolute inset-0 px-8 flex items-center justify-center break-all">
+                    SEND
+                  </div>
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- footer -->
+    <div class="footer bg-[#F4ECE6] pt-10 sm:pt-0 max-sm:pb-10">
+      <!-- last -->
+      <div
+        class="w-full footerbottom z-[2] relative flex items-center justify-center">
+        <img
+          class="w-full gsap-footer-image footerbottommainimg z-[2] relative footerbottomimg"
+          src="./assets/images/footerimg22.png"
+          alt="" />
+        <img
+          class="w-full footerbottommainimgbackground z-[1] absolute bottom-0 scale-90"
+          src="./assets/images/yellowfootercontactrctangle.png"
+          alt="" />
+      </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="./animations.js"></script>
+    <script src="./index.js"></script>
+  </body>
+</html>

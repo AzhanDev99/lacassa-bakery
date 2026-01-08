@@ -1,0 +1,641 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anton+SC&display=swap"
+      rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cookie&display=swap"
+      rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet" />
+  </head>
+  <body>
+    <div class="main p-4 sm:p-8 bg-[#F4ECE6]">
+      <div
+        id="menu"
+        class="menu-hidden w-full h-screen fixed top-0 left-0 right-0 bg-[#341713] z-[999] p-4 sm:p-12 overflow-y-auto hide-scrollbar flex flex-col gap-6 sm:gap-10 justify-between">
+        <div class="flex justify-between items-center">
+          <a href="./home.html">
+            <img
+              src="./assets/images/menuLogo.png"
+              alt=""
+              class="w-24 sm:w-48" />
+          </a>
+          <div class="flex gap-4 items-center">
+            <div id="btnClose" class="cursor-pointer flex gap-2 items-center">
+              <p class="anto text-base sm:text-lg text-white">MENU</p>
+              <img src="./assets/svgs/menuHamburger.svg" alt="" class="w-5" />
+            </div>
+            <a href="./contact.html">
+              <button
+                class="contactBtn max-sm:hidden cursor-pointer anto relative inline-flex items-center justify-center text-sm text-[#341713]">
+                <img
+                  src="./assets/svgs/Btn.svg"
+                  alt=""
+                  class="relative w-4/5" />
+
+                <div
+                  class="absolute inset-0 px-8 flex items-center justify-center break-all">
+                  CALL US&nbsp;&nbsp;(+64) 2904305039
+                </div>
+              </button>
+            </a>
+          </div>
+        </div>
+        <div class="flex justify-start items-center flex-col gap-2">
+          <a
+            href="./about.html"
+            class="relative py-3 sm:py-9 px-4 rounded-full anto text-[1.7rem] sm:text-6xl bg-[#A0D8E0] text-[#341713]">
+            <div
+              class="absolute -right-20 sm:-right-36 top-1/2 -translate-y-1/2">
+              <img
+                src="./assets/images/menuItem1.png"
+                alt=""
+                class="w-16 sm:w-24 sm:w-32 rotater1" />
+            </div>
+            ABOUT US
+          </a>
+          <a
+            href="./guatemalanPastries.html"
+            class="py-3 sm:py-5 px-2 text-white rounded-full anto text-[1.7rem] sm:text-6xl relative hover:bg-white/5 px-4 transition ease-in duration-150">
+            <div
+              class="absolute -left-6 sm:-left-40 -top-10 sm:top-1/2 -translate-y-1/2">
+              <img
+                src="./assets/images/menuItem2.png"
+                alt=""
+                class="w-20 sm:w-40 rotater2" />
+            </div>
+            Guatemalan Pastries
+          </a>
+          <a
+            href="./guatemalanBread.html"
+            class="py-3 sm:py-5 px-2 text-white rounded-full anto text-[1.7rem] sm:text-6xl relative hover:bg-white/5 px-4 transition ease-in duration-150">
+            <div
+              class="absolute -right-8 sm:-right-44 top-12 sm:top-[20%] sm:-translate-y-1/2">
+              <img
+                src="./assets/images/menuItem3.png"
+                alt=""
+                class="w-24 sm:w-40 rotater2" />
+            </div>
+            Guatemalan Bread
+          </a>
+          <a
+            href="./gallery.html"
+            class="py-3 sm:py-5 px-2 text-white rounded-full anto text-[1.7rem] sm:text-6xl relative hover:bg-white/5 px-4 transition ease-in duration-150">
+            <div class="absolute -left-24 sm:-left-44 top-1/2 -translate-y-1/2">
+              <img
+                src="./assets/images/menuItem4.png"
+                alt=""
+                class="w-24 sm:w-40 rotater1" />
+            </div>
+            Gallery
+          </a>
+          <button
+            class="contactBtn cursor-pointer sm:hidden anto relative inline-flex items-center justify-center text-sm text-[#341713]">
+            <img src="./assets/svgs/Btn.svg" alt="" class="relative w-4/5" />
+
+            <div
+              class="absolute inset-0 px-8 flex items-center justify-center break-all">
+              CONTACT US
+            </div>
+          </button>
+        </div>
+        <div
+          class="flex justify-between items-center mt-2 sm:mt-5 max-sm:flex-col max-sm:gap-4">
+          <div
+            class="w-full sm:w-[40%] flex gap-2 items-center justify-center sm:justify-start order-3 sm:order-1">
+            <img src="./assets/svgs/locationIcon.svg" alt="" class="w-5" />
+            <p class="Int text-[0.6rem] sm:text-sm font-light text-[#F4ECE6]">
+              Visit Us 5400 Rreston Highway,Louisville, AB 12345
+            </p>
+          </div>
+          <div
+            class="w-full sm:w-[20%] justify-center flex gap-4 items-center order-1 sm:order-2">
+            <div
+              class="w-12 sm:w-10 h-12 sm:h-10 shrink-0 p-2 sm:p-3 flex justify-center items-center rounded-full border border-white/10">
+              <img src="./assets/svgs/fbLogo.svg" alt="" />
+            </div>
+            <div
+              class="w-12 sm:w-10 h-12 sm:h-10 shrink-0 p-2 sm:p-3 flex justify-center items-center rounded-full border border-white/10">
+              <a href="https://www.instagram.com/devo.ids/">
+                <img src="./assets/svgs/instaLogo.svg" alt="" />
+              </a>
+            </div>
+            <div
+              class="w-12 sm:w-10 h-12 sm:h-10 shrink-0 p-2 sm:p-3 flex justify-center items-center rounded-full border border-white/10">
+              <img src="./assets/svgs/youtubeLogo.svg" alt="" />
+            </div>
+          </div>
+          <div
+            class="w-full sm:w-[40%] flex justify-center sm:justify-end order-2 sm:order-3">
+            <img
+              src="./assets/svgs/rigtyLogo.svg"
+              alt=""
+              class="w-60 sm:w-[80%]" />
+          </div>
+        </div>
+      </div>
+      <header
+        class="w-full max-sm:px-4 sm:pr-16 flex justify-between items-center max-sm:py-6">
+        <div class="w-fit relative gsap-header-logo">
+          <img
+            src="./assets/images/Subtract.png"
+            alt=""
+            class="absolute top-0 left-0 scale-[1.32] origin-top-left max-sm:hidden" />
+          <img
+            src="./assets/images/logo.png"
+            alt=""
+            class="w-28 sm:w-52 relative sm:scale-[0.8]" />
+        </div>
+        <div class="flex gap-6">
+          <div
+            id="btnOpen"
+            class="gsap-header-menu menuBtn cursor-pointer flex gap-2 items-center">
+            <p class="anto text-base sm:text-lg text-[#341713]">MENU</p>
+            <img src="./assets/svgs/hamburger.svg" alt="" class="w-5" />
+          </div>
+          <a href="./contact.html">
+            <button
+              class="gsap-header-menu contactBtn cursor-pointer max-sm:hidden anto relative inline-flex items-center justify-center text-sm text-[#341713]">
+              <img src="./assets/svgs/Btn.svg" alt="" class="relative w-4/5" />
+
+              <div
+                class="absolute inset-0 px-8 flex items-center justify-center break-all">
+                CALL US&nbsp;&nbsp;(+64) 2904305039
+              </div>
+            </button>
+          </a>
+        </div>
+      </header>
+      <!-- section1 -->
+      <div
+        class="section-1 w-full sm:min-h-screen rounded-[30px] sm:rounded-[50px] bg-white sm:rounded-tl-none relative z-20 pt-6 sm:pt-12 pb-4">
+        <div
+          class="w-full py-2 px-4 sm:px-32 flex justify-between items-center sm:items-stretch max-sm:flex-col">
+          <div
+            class="w-full sm:w-[50%] flex flex-col justify-center items-center sm:items-start gap-5">
+            <h3
+              class="gsap-about-s1-heading homeSection1SubHeading anto text-6xl max-sm:text-center sm:text-8xl text-[#341713]">
+              About Us
+            </h3>
+            <p
+              class="gsap-about-s1-para homeSection1Para max-sm:text-center Int text-xs sm:text-sm text-[#341713] px-4 sm:px-0 sm:w-[60%] font-medium sm:font-normal">
+              At La Casa del Pan Bakery, we believe great baking starts with
+              passion and care. Every loaf, pastry, and cake is made fresh using
+              quality ingredients and time-honored techniques. Our goal is to
+              create flavors that feel warm, familiar, and comforting. We bake
+              not just for taste, but for moments worth sharing
+            </p>
+            <button
+              class="gsap-about-s1-btn contactBtn cursor-pointer max-sm:mx-auto anto relative sm:inline-flex items-center justify-center text-sm text-[#341713] hidden">
+              <img src="./assets/svgs/Btn.svg" alt="" class="relative w-4/5" />
+
+              <div
+                class="absolute inset-0 px-8 flex items-center justify-center break-all">
+                CONTACT US
+              </div>
+            </button>
+          </div>
+          <div class="w-full sm:w-[50%] relative flex justify-end py-8 sm:py-4">
+            <div
+              class="homeSection1RightImage w-full sm:w-full h-auto max-h-[40dvh] sm:max-h-[75dvh] rounded-[30px] sm:rounded-[50px] bg-[#A0D8E0] sm:pt-8">
+              <img
+                src="./assets/images/crosant-22.webp"
+                alt=""
+                class="gsap-about-s1-image transform scale-[0.9] sm:scale-[1.15]" />
+            </div>
+          </div>
+          <button
+            class="contactBtn cursor-pointer max-sm:mx-auto anto relative inline-flex items-center justify-center text-sm text-[#341713] sm:hidden">
+            <img src="./assets/svgs/Btn.svg" alt="" class="relative w-4/5" />
+
+            <div
+              class="absolute inset-0 px-8 flex items-center justify-center break-all">
+              CONTACT US
+            </div>
+          </button>
+        </div>
+      </div>
+
+      <!-- section2 -->
+      <div
+        class="section-2 w-full min-h-fit pt-10 sm:pt-32 pb-10 sm:pb-16 flex items-center justify-between px-4 sm:px-28 max-sm:flex-col max-sm:gap-24">
+        <div
+          class="homeSection2LeftImage w-full sm:w-[40%] h-full py-4 sm:py-10 bg-[#F9D6AE] rounded-[30px] sm:rounded-[50px] flex items-center">
+          <img
+            src="./assets/images/longImageforAbout.png"
+            alt=""
+            class="gsap-about-s2-image gsap-float transform scale-[1.2] sm:scale-[1.5] origin-center" />
+        </div>
+        <div class="w-full sm:w-[50%] sm:pr-16">
+          <div
+            class="w-full sm:w-[85%] flex flex-col justify-center items-start gap-4 sm:gap-8 relative">
+            <div
+              class="homePageSection2AbsoluteCrosantImg absolute -top-16 sm:-top-12 right-0 sm:-right-16">
+              <img
+                src="./assets/images/crrosont.png"
+                alt=""
+                class="gsap-float w-16 sm:w-24" />
+            </div>
+            <div
+              class="homePageSection2AbsoluteQuoteImage absolute -top-20 -right-5 sm:-right-24">
+              <img
+                src="./assets/images/quotesOncrrosant.png"
+                alt=""
+                class="w-8 sm:w-16" />
+            </div>
+            <h3
+              class="gsap-about-s2-heading homeSection2Heading anto max-sm:text-center text-3xl sm:text-4xl text-[#341713]">
+              The Best Guatemalan Pastries & Bread That You Can Find
+            </h3>
+            <p
+              class="gsap-about-s2-para homeSection2Para Int max-sm:text-center text-xs sm:text-sm text-[#341713]">
+              <span class="font-bold text-[#FF7D33]"
+                >Tradition Is In Our Veins</span
+              >, the baking tradition in Guatemala dates back to colonial times
+              and the different “styles” are due in part to the fact that in
+              1690 the City Council ordered each baker to “mark” their bread to
+              know its manufacturer in case of lack of weight or quality.
+              <br /><br /><br />
+              there are different historical and industrial variables that
+              influence this, the truth is that Guatemalans who live abroad
+              crave for that aroma of freshly baked pastries and a basket of
+              bread every afternoon at home, and we are here to fulfill that
+              wish.
+            </p>
+            <p
+              class="homeSection2Para Int max-sm:text-center text-xs sm:text-sm text-[#341713]">
+              <span class="font-bold text-[#FF7D33]"
+                >All our products are made by hand every day</span
+              >, the bakers begin their day very early every morning to be able
+              to have hot bread, made fresh to you every single morning. The
+              bread is made in our bakeries from the beginning to the end.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- section3 -->
+
+      <div
+        class="section-2 speacialSection2 w-full min-h-fit pt-10 sm:pt-32 pb-10 sm:pb-16 flex items-center justify-between px-4 sm:px-28 max-sm:flex-col max-sm:gap-24">
+        <div
+          class="homeSection2LeftImage w-full sm:w-[45%] h-[50dvh] sm:h-[60dvh] bg-[#F19C5C] rounded-[30px] sm:rounded-t-[50px] rounded-b-[90px] sm:rounded-b-[130px] flex items-center overflow-hidden relative">
+          <img
+            src="./assets/images/textirePastry.png"
+            alt=""
+            class="gsap-about-s3-image gsap-float transform scale-[1.4] sm:scale-[1.2] origin-bottom absolute bottom-0" />
+        </div>
+        <div class="w-full sm:w-[50%] sm:pr-16">
+          <div
+            class="w-full sm:w-[85%] flex flex-col justify-center items-start gap-4 sm:gap-8 relative">
+            <div
+              class="homePageSection2AbsoluteCrosantImg absolute -top-16 sm:-top-12 right-0 sm:-right-16">
+              <img
+                src="./assets/images/crrosont.png"
+                alt=""
+                class="w-16 sm:w-24" />
+            </div>
+            <div
+              class="homePageSection2AbsoluteQuoteImage absolute -top-20 -right-5 sm:-right-24">
+              <img
+                src="./assets/images/quotesOncrrosant.png"
+                alt=""
+                class="w-8 sm:w-16" />
+            </div>
+            <h3
+              class="gsap-about-s3-heading homeSection2Heading anto max-sm:text-center text-3xl sm:text-4xl text-[#341713]">
+              Our pastries & bread are original, our flavor and texture is
+              traditional
+            </h3>
+            <p
+              class="gsap-about-s3-para homeSection2Para Int max-sm:text-center text-xs sm:text-sm text-[#341713]">
+              <span class="font-bold text-[#FF7D33]"
+                >The family secret was passed down from generations back</span
+              >, our recipes are traditional and authentic from Guatemala. We
+              are the only bakery that maintains the true Guatemalan flavor. Our
+              pastries & bread are original, our flavor and texture is
+              traditional
+            </p>
+
+            <p
+              class="gsap-about-s3-para homeSection2Para Int max-sm:text-center text-xs sm:text-sm text-[#341713]">
+              <span class="font-bold text-[#FF7D33]"
+                >At breakfast, lunch, dinner, or as a snack</span
+              >, Guatemalans traditionally bring sweet bread to the table at
+              home. Each person has their favorite.
+            </p>
+            <button
+              class="contactBtn cursor-pointer max-sm:hidden anto relative inline-flex items-center justify-center text-sm text-[#341713]">
+              <img src="./assets/svgs/Btn.svg" alt="" class="relative w-4/5" />
+
+              <div
+                class="absolute inset-0 px-8 flex items-center justify-center break-all">
+                CALL US&nbsp;&nbsp;(+64) 2904305039
+              </div>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- reviews -->
+      <div class="w-full h-fit pt-5 sm:pt-20 px-4 sm:px-20">
+        <div class="flex max-sm:items-center flex-col gap-2 pb-5 pl-0 sm:pl-5">
+          <h1
+            class="gsap-review-heading max-sm:text-center text-2xl sm:text-4xl font-medium anto">
+            What Our Clients Are Saying
+          </h1>
+          <div
+            class="gsap-review-rating flex items-center justify-between w-fit gap-2 max-sm:flex-col">
+            <img class="w-28" src="./assets/svgs/rating.svg" alt="" />
+            <h1 class="font-bold Int text-sm">5.0 rating of 12 reviews</h1>
+          </div>
+        </div>
+
+        <div
+          class="w-full flex flex-col sm:flex-row justify-evenly items-center sm:items-stretch gap-4">
+          <!-- review1 -->
+          <div
+            class="gsap-review-card w-full sm:w-[30%] rounded-2xl flex flex-col items-center justify-between px-3 py-6 gap-2 sm:gap-3 bg-[#D5C4C34D]/40">
+            <div class="w-full h-fit flex flex-col items-start gap-4">
+              <img class="w-28" src="./assets/svgs/rating.svg" alt="" />
+              <img class="w-7" src="./assets/svgs/google.svg" alt="" />
+            </div>
+            <p class="w-full h-fit text-xs sm:text-sm Int">
+              The best service I’ve received in a long time! The team was
+              incredibly responsive, and their expertise was evident in the
+              final product. There was a small miscommunication initially, but
+              they quickly resolved it. I would definitely work with them again.
+            </p>
+            <div
+              class="w-full h-fit flex flex-col justify-between items-start gap-2">
+              <h1 class="Int font-semibold text-lg sm:text-xl">
+                Isabella Turner
+              </h1>
+              <p class="text-[#7C7C7C] Int text-sm">Project Manager</p>
+              <img
+                class="w-8 sm:w-12 h-8 sm:h-12 rounded-full"
+                src="./assets/images/userprofile.png"
+                alt="" />
+            </div>
+          </div>
+          <!-- review2 -->
+          <div
+            style="background-image: url(assets/images/reviewbg.png)"
+            class="gsap-review-card relative w-full sm:w-[30%] max-sm:h-[380px] bg-[#F9FAFB] rounded-2xl flex flex-col items-center justify-end px-5 py-6 gap-2 sm:gap-3 bg-img bg-cover bg-center flex-shrink-0 bg-gradient-to-t from-red-800 to-transparent border border-[#56545B]">
+            <div
+              class="absolute inset-0 bg-gradient-to-t from-black/30 rounded-2xl to-transparent"></div>
+            <div class="flex w-full justify-between">
+              <div
+                class="w-full h-fit flex flex-col justify-between items-start gap-4 z-10">
+                <img class="w-28" src="./assets/svgs/rating.svg" alt="" />
+
+                <div class="flex gap-3 items-center justify-between">
+                  <img
+                    class="w-8 sm:w-12 h-8 sm:h-12 rounded-full"
+                    src="./assets/images/userprofile3.png"
+                    alt="" />
+                  <div class="flex flex-col gap-1">
+                    <h1 class="text-[#FFFFFF] Int text-lg">Henry Foster</h1>
+                    <p class="text-[#FFFFFF] Int text-sm">Project Manager</p>
+                  </div>
+                </div>
+              </div>
+              <img class="w-8 mt-2" src="./assets/svgs/google.svg" alt="" />
+            </div>
+          </div>
+          <!-- review3 -->
+          <div
+            class="gsap-review-card w-full sm:w-[30%] bg-[#FFE65A38] opacity-0.22 rounded-2xl flex flex-col items-center justify-between px-5 py-6 gap-2 sm:gap-3">
+            <div class="w-full h-fit flex flex-col items-start gap-4">
+              <img class="w-28" src="./assets/svgs/rating.svg" alt="" />
+              <img class="w-7" src="./assets/svgs/google.svg" alt="" />
+            </div>
+            <p class="w-full h-fit text-xs sm:text-sm Int">
+              The marketing campaign they created for us was outstanding, and we
+              saw significant engagement. However, I wish they had provided more
+              frequent updates during the process. Overall, great work! Highly
+              recommended!
+            </p>
+            <div
+              class="w-full h-fit flex flex-col justify-between items-start gap-2">
+              <h1 class="Int font-semibold text-lg sm:text-xl">Nathan Scott</h1>
+              <p class="text-[#7C7C7C] Int text-sm">CEO, Scott Enterprises</p>
+              <img
+                class="w-8 sm:w-12 h-8 sm:h-12 rounded-full"
+                src="./assets/images/userprofile2.png"
+                alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- service section 4 -->
+      <div
+        class="gsap-banner-wrapper servicesection4 w-full pt-16 sm:pt-16 relative">
+        <img
+          class="absolute -top-5 w-[20%] sm:w-[12%] z-[2] hidden sm:block"
+          src="./assets/svgs/section4absoluteimg.svg"
+          alt="" />
+        <div
+          class="servicesection4container w-full bg-white rounded-[40px] sm:rounded-[70px] flex flex-col sm:flex-row items-stretch justify-center pt-20">
+          <img
+            class="absolute top-10 -left-5 w-[25%] z-[2] block sm:hidden"
+            src="./assets/svgs/section4absoluteimg.svg"
+            alt="" />
+          <!-- left -->
+          <div
+            class="py-10 sm:py-0 w-full sm:w-1/2 flex items-center justify-center px-4 sm:px-0 overflow-hidden">
+            <div
+              class="servicesection4bgimg w-[95%] sm:w-[85%] h-full sm:h-[70%] bg-norepeat bg-cover position-center relative">
+              <img src="./assets/images/section4rectangle.png" alt="" />
+              <img
+                class="gsap-banner-image servicesection4img scale-110 sm:scale-110 absolute w-[100%] -top-4 sm:-top-5"
+                src="./assets/images/servicesection4img.png"
+                alt="" />
+            </div>
+          </div>
+
+          <!-- right -->
+          <div
+            class="sm:-translate-x-10 w-full sm:w-1/2 flex flex-col items-center py-10 sm:py-16 relative">
+            <img
+              class="absolute top-0 sm:top-0 right-20 sm:right-44 w-[18%] sm:w-[15%]"
+              src="./assets/svgs/section4absolute.svg"
+              alt="" />
+            <h1 class="servicesection4heading anto text-2xl sm:text-4xl">
+              Review Us
+            </h1>
+            <p
+              class="servicesection4para Int text-xs sm:text-sm w-[80%] sm:w-[58%] text-start py-5 font-medium">
+              Thank you for choosing <span class="text-[#FC6D30] font-bold"
+                >La Casa del Pan Bakery</span
+              >! Would you be willing to write us a review? It should only take
+              a minute and would make an immense difference to our bakery.
+            </p>
+            <form
+              action=""
+              class="servicesection4form w-[90%] sm:w-[60%] flex flex-col sm:gap-2">
+              <div class="gsap-banner-form-item">
+                <label for="" class="Int font-medium text-[0.6rem] sm:text-xs"
+                  >Summarize your review or highlight an interesting
+                  detail</label
+                >
+                <input
+                  type="text"
+                  class="sm:py-2 w-full bg-white border border-[#909090] rounded-lg" />
+              </div>
+
+              <div class="gsap-banner-form-item">
+                <label for="" class="Int font-medium text-[0.6rem] sm:text-xs"
+                  >Tell us your name</label
+                >
+                <input
+                  type="text"
+                  class="sm:py-2 w-full bg-white border border-[#909090] rounded-lg" />
+              </div>
+              <div class="gsap-banner-form-item">
+                <label for="" class="Int font-medium text-[0.6rem] sm:text-xs"
+                  >Tell us your email</label
+                >
+                <input
+                  type="email"
+                  class="sm:py-2 w-full bg-white border border-[#909090] rounded-lg" />
+              </div>
+
+              <div class="gsap-banner-form-item">
+                <label for="" class="Int font-medium text-[0.6rem] sm:text-xs"
+                  >Tell people your review</label
+                >
+                <input
+                  type="text"
+                  class="sm:py-2 w-full h-32 w-full bg-white border border-[#909090] rounded-lg" />
+              </div>
+
+              <button
+                class="gsap-banner-button bg-[#341713] rounded-full px-10 sm:px-8 py-2 sm:py-3 Int font-semibold w-fit text-center mx-auto text-[#F4ECE6] mt-4 text-sm sm:text-base">
+                Submit Review
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- footer -->
+    <div class="footer bg-[#F4ECE6] pt-10 sm:pt-0 max-sm:pb-10">
+      <!-- top -->
+      <div class="footertop flex w-full gap-5 justify-between overflow-hidden">
+        <img
+          class="gsap-footer-line footertopleftimg footerleftline w-[40%] hidden sm:block"
+          src="./assets/svgs/footerlineleft.svg"
+          alt="" />
+        <img
+          class="gsap-footer-line footerleftlinemobile w-[25%] block sm:hidden"
+          src="./assets/svgs/footerlineleftmobile.svg"
+          alt="" />
+        <img
+          class="gsap-footer-logo footerlogocenter w-[40%] sm:w-[20%]"
+          src="./assets/images/footerlogo.png"
+          alt="" />
+        <img
+          class="gsap-footer-line footerrightline w-[40%] hidden sm:block"
+          src="./assets/svgs/footerlineright.svg"
+          alt="" />
+        <img
+          class="gsap-footer-line footerrightlinemobile w-[30%] block sm:hidden"
+          src="./assets/svgs/footerlinerightmobile.svg"
+          alt="" />
+      </div>
+
+      <!-- middle -->
+      <div
+        class="footermiddle flex justify-center items-center flex-col gap-5 pt-5 sm:pt-0">
+        <div class="leading-[0.7] flex flex-col items-center">
+          <h1
+            class="gsap-footer-heading footertopheading text-[#341713] text-center text-[3rem] sm:text-[6rem] anto w-[80%] sm:w-full">
+            Authentic
+            <span class="cook text-[5rem] sm:text-[10rem] gsap-footer-cookie"
+              >Bakery</span
+            >
+          </h1>
+          <h2
+            class="footerheading text-2xl w-[60%] sm:w-full sm:text-3xl anto text-center">
+            Guatemalan Pastries & Bread That You Can Find
+          </h2>
+        </div>
+        <img
+          class="headingbottom w-[70%] sm:w-[35%]"
+          src="./assets/svgs/footerimg2.svg"
+          alt="" />
+        <div
+          class="flex flex-col sm:flex-row items-center justify-center gap-1 sm:gap-5">
+          <button
+            class="footerbutton flex bg-[#A0D8E0] px-4 sm:px-6 py-2 sm:py-3 rounded-full text-[#341713] gap-2">
+            <span class="font-bold font-sans">Call Now</span>
+            <img class="w-5" src="./assets/svgs/footerphone.svg" alt="" />(502)
+            749-8333
+          </button>
+          <div class="flex gap-4">
+            <img
+              class="footersocialicon w-12 sm:w-10 gsap-footer-social"
+              src="./assets/svgs/footerfacebook.svg"
+              alt="" />
+            <a href="instagram.com/devo.ids/">
+              <img
+                class="footersocialicon w-12 sm:w-10 gsap-footer-social"
+                src="./assets/svgs/footerInstagram.svg"
+                alt="" />
+            </a>
+            <img
+              class="footersocialicon w-12 sm:w-10 gsap-footer-social"
+              src="./assets/svgs/footeryoutube.svg"
+              alt="" />
+          </div>
+        </div>
+        <div class="flex flex-col sm:flex-row items-center gap-2 sm:gap-10">
+          <p
+            class="footerlocationwithpara flex items-center Int text-[#341713] text-xs">
+            <img
+              class="w-6"
+              src="./assets/svgs/footerlocation.svg"
+              alt="" />Visit Us 5400 Rreston Highway,Louisville, AB 12345
+          </p>
+          <p
+            class="footertimewithpara flex items-center Int text-[#341713] text-xs">
+            <img
+              class="w-6"
+              src="./assets/svgs/footerwatch.svg"
+              alt="" />Monday-Friday: 7.00am – 9.00pm
+          </p>
+        </div>
+      </div>
+
+      <!-- last -->
+      <div
+        class="w-full footerbottom z-[2] relative flex items-center justify-center pt-5 sm:pt-10">
+        <img
+          class="gsap-footer-image w-full footerbottommainimg z-[2] relative footerbottomimg"
+          src="./assets/images/footerimg22.png"
+          alt="" />
+        <img
+          class="w-full footerbottommainimgbackground z-[1] absolute bottom-0 scale-90"
+          src="./assets/images/footerractangle.png"
+          alt="" />
+      </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="./animations.js"></script>
+    <script src="./index.js"></script>
+  </body>
+</html>

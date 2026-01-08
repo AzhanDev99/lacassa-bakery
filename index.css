@@ -1,0 +1,125 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+   color:  #341713;
+}
+
+.anto {
+  font-family: "Anton SC", sans-serif;
+}
+
+
+.cook{
+  font-family: "Cookie", cursive;
+}
+
+
+.Int{
+  font-family: "Inter", sans-serif;
+}
+
+
+.hide-scrollbar {
+  scrollbar-width: none;   /* Firefox */
+  -ms-overflow-style: none; /* IE & Edge */
+}
+
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;           /* Chrome, Safari */
+}
+
+
+
+ /* MARQUEE WRAPPER */
+    .marquee-row {
+      overflow: hidden;
+      position: relative;
+      width: 100%;
+    }
+
+    .marquee-content {
+      display: flex;
+      width: fit-content;
+      animation: marquee 40s linear infinite;
+      will-change: transform;
+    }
+
+    /* Top Row → left direction */
+    .marquee-row.top .marquee-content {
+      animation-direction: normal;
+    }
+
+    /* Middle Row → right direction */
+    .marquee-row.middle .marquee-content {
+      animation-direction: reverse;
+    }
+
+    /* Bottom Row → left direction */
+    .marquee-row.bottom .marquee-content {
+      animation-direction: normal;
+    }
+
+    @keyframes marquee {
+      0%   { transform: translateX(0); }
+      100% { transform: translateX(-50%); }
+    }
+
+    /* Pause on hover */
+    .marquee-row:hover .marquee-content {
+      animation-play-state: paused;
+    }
+
+    /* IMAGE TILT ROTATION */
+    .marquee-row img {
+      animation: tilt 2.6s ease-in-out infinite alternate;
+      transform-origin: center;
+    }
+
+    @keyframes tilt {
+      from { transform: rotate(-6deg); }
+      to   { transform: rotate(6deg); }
+    }
+
+    /* Subtle randomness */
+    .marquee-row img:nth-child(2n) { animation-duration: 3s; }
+    .marquee-row img:nth-child(3n) { animation-duration: 2.2s; }
+    .marquee-row img:nth-child(4n) { animation-duration: 3.4s; }
+
+ .rotater1 {
+    animation: rotate1 5s linear infinite;
+    transform-origin: 50% 50%;
+    display: block;
+  }
+
+  .rotater2 {
+    animation: rotate2 5s linear infinite;
+    transform-origin: 50% 50%;
+    display: block;
+  }
+
+  @keyframes rotate1 {
+    from { transform: rotate(0deg); }
+    to   { transform: rotate(360deg); }
+  }
+
+  @keyframes rotate2 {
+    from { transform: rotate(0deg); }
+    to   { transform: rotate(-360deg); }
+  }
+
+   #menu {
+     transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+   }
+
+  #menu.menu-hidden {
+      transform: translateY(-100%);
+      opacity: 0;
+      pointer-events: none;
+    }
+
+    #menu.menu-visible {
+      transform: translateY(0);
+      opacity: 1;
+      pointer-events: auto;
+    }
