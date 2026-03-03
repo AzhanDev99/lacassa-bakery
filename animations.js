@@ -92,7 +92,8 @@ gsap.from(".gsap-footer-social", {
   ease: "elastic.out(1, 0.5)"
 });
 
-gsap.from(".gsap-footer-image", {
+if(window.innerWidth > 640){
+  gsap.from(".gsap-footer-image", {
   scrollTrigger: {
     trigger: ".gsap-footer-image",
     start: "top 90%",
@@ -103,6 +104,7 @@ gsap.from(".gsap-footer-image", {
   scale: 0.8,
   opacity: 0
 });
+}
 
 // Reviews Section (Common)
 gsap.from(".gsap-review-heading", {
